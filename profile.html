@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" this is an e-commerce project for making come and grab ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!-- google font link -->
+    <title>Document</title>
+</head>
+<body>
+   <!-- navbar starts here -->
+   <i class="fa fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__list"><a href="register.html" class="nav__link">Resigter</a></li>
+        <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+        <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+        <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+        <li class="nav__list img-top"><a href="profile.html" class="nav__link"><img class="profile-icon" src="images/icon-img.JPG" alt="profile icon"></a></li>
+    </ul>
+
+    <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+        <a href="index.html" class="nav__brand nav__link">Come And Grab</a>
+        </li>
+        <li class="nav__list">
+            <a href="cart.html" class=" nav__link"><span><i  class="fa-solid fa-cart-shopping"></i></span>Cart 2  Products - $200</a>
+            </li>
+    </ul>
+
+   </nav>
+     <!-- navbar ends here -->
+
+     <main>
+      <section class="profile flex-center">
+        <div class="profile__card card ">
+            <img src="images/icon-img.JPG" alt="profile img" class="profile__img">
+            <h3>Mohammad Sami</h3>
+            <h5 class="profile__email">mdsami227788@gamil.com</h5>
+            <p class="profile__desc">I Love To Shop Electronic Gadgets</p>
+            <div class="profile__actions">
+                <button class="profile__btn-edit btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="profile__btn-edit btn"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        
+      </section>
+     </main>
+
+     <!-- footer starts here -->
+     <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe To Stay Updated:</label>
+            
+            <input id="subscribe" name="subscribe" type="email" class="footer__input" placeholder="Enter A Valid Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Conright-2024 Mohammad Sami. All Rights Reserved</p>
+        </div>
+     </footer>
+      <!-- footer ends here -->
+
+      <script src="scripts/index.js"></script>
+</body>
+</html>

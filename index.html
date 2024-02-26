@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" this is an e-commerce project for making come and grab ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!-- google font link -->
+    <title>Come And Grab</title>
+</head>
+<body>
+   <!-- navbar starts here -->
+   <i class="fa fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__list"><a href="register.html" class="nav__link">Resigter</a></li>
+        <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+        <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+        <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+        <li class="nav__list img-top"><a href="profile.html" class="nav__link"><img class="profile-icon" src="images/icon-img.JPG" alt="profile icon"></a></li>
+    </ul>
+
+    <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+        <a href="index.html" id="brand-name" class="nav__brand nav__link">Come And Grab</a>
+        </li>
+        <li class="nav__list">
+            <a href="cart.html" class=" nav__link"><span><i  class="fa-solid fa-cart-shopping"></i></span>Cart 2  Products - $200</a>
+            </li>
+    </ul>
+
+   </nav>
+     <!-- navbar ends here -->
+
+    
+
+     <!-- header starts here -->
+     <header class="header">
+        <div class="banner flex-space-around ">
+            <marquee class="banner__title" behavior="Smooth" direction="">50% Sales Going On. Hurry Up!</marquee>
+            <div class="features flex-space-around">
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-truck-fast feature__icon"></i>
+                    <h3>Shipping Within 3 Days</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-brands fa-rocketchat feature__icon"></i>
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-regular fa-credit-card feature__icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+            
+        </div>
+     </header>
+     <!-- header ends here -->
+
+     <!-- main stars here -->
+    <main class="flex-center main-column">
+        <div class="sidebar">
+           <section class="categories-section">
+
+            <h3 class="section-title">
+                Categories
+            </h3>
+            <ul class="list">
+                <li class="list__item">
+                    <label for="phone">
+                        <input type="checkbox" name="phone" id="phone" value="phone"> Phone</label>
+                    
+                </li>
+                <li class="list__item">
+                    <label for="tablets">
+                        <input type="checkbox" name="tablets" id="tablets" value="tablets">Tablets</label>
+                    
+                </li>
+                <li class="list__item">
+                    <label for="television">
+                        <input type="checkbox" name="television" id="television" value="television">Television</label>
+                    
+                </li>
+                <li class="list__item">
+                    <label for="computers">
+                        <input type="checkbox" name="computers" id="computers" value="computers">Computers</label>
+                    
+                </li>
+                <li class="list__item">
+                    <label for="headphones">
+                        <input type="checkbox" name="headphones" id="headphones" value="headphones">Headphones
+                    </label>
+                    
+                </li>
+            </ul>
+       
+           </section>
+           <!-- section-2 -->
+           <section class="price-section">
+
+            <h3 class="section-title">
+                Price Range
+            </h3>
+            <ul class="list">
+                <li class="list__item">
+                    <label for="price1">
+                        <input type="radio" name="price" id="price1" value="[0,20]"> $0-$20</label>
+                </li>
+
+                <ul class="list">
+                    <li class="list__item">
+                        <label for="price2">
+                            <input type="radio" name="price" id="price2" value="[21,50]"> $21-$50</label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price3">
+                            <input type="radio" name="price" id="price3" value="[51,100]"> $51-$100</label>
+                    </li> 
+                    <li class="list__item">
+                        <label for="price4">
+                            <input type="radio" name="price" id="price4" value="[101,500]"> $101-$500</label>
+                    </li> 
+                    <li class="list__item">
+                        <label for="price5">
+                            <input type="radio" name="price" id="price5" value="[501+]"> $501+</label>
+                    </li>   
+           
+            </ul>
+           </section>
+           <section class="shipping-section">
+
+            <h3 class="section-title">
+                Shipping Options
+            </h3>
+            <ul class="list">
+                <li class="list__item">
+                    <label for="free">
+                        <input type="radio" name="shipping" id="free" value="free"> Free Shipping</label>
+                </li>
+                <li class="list__item">
+                    <label for="paid">
+                        <input type="radio" name="shipping" id="paid" value="paid"> Paid Shipping</label>
+                </li>
+            </ul>   
+            </section> 
+        </div>
+        <div class="main-content ">
+            <section class="actions flex-space-around">
+                <div class="actions__sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most Sold Items First</option>
+                    <option value="rating">Most Rated Items First</option>
+                    <option value="price" >Cheapest Items First</option>
+                    <option value="price2">Highest Price Items First</option>
+                    <option value="arival">Newest Items First</option>
+                    <option value="discount">Discounted Items First</option>
+                    </select> 
+                </div>
+                <div class="actions__search ">
+                    <input type="text" placeholder="Search Your Desired Products">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass">
+                        </i>
+                    </button>
+                </div>
+            </section>
+            <!-- product section starts here -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img  class="product__img" src="images/product1.jpg" alt="product1">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Philips Pro Headphone
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__desc">
+                           <p> · Active Noise Canceling (ANC). Lose yourself, not the music.</p>
+                           <a href="product.html" class="learn-more">View Details</a>
+                           <h4 class="product__price">Price: $210</h4>
+                           <p class="product__rating">Rating: 5/5</p>
+                           <button class="btn product__button">Add To Cart</button>
+                            <!-- <p>· 30 hours play time or talk time (25 hours with ANC on)</p>
+
+                            <p>· Smooth, adjustable headband. Soft ear-cup cushions.</p>
+
+                            <p>· Voice Assistant. Manage your life on the move</p> -->
+                        </p>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in stock</span>
+                        <hr class="hr-design">
+                        <span>10 sold</span>
+                    </div>
+                    <img  class="product__img" src="images/product2.png" alt="product2">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Realme Buds Air 5 TWS Earbuds
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__desc">
+                            <p>Key Features:</p>
+                            <p>· In-Ear</p>
+                           <!-- <p> Lifestyle: Entertainment,Travel
+                            Active Noise Cancellation</p> -->
+                            <a href="product.html" class="learn-more">View Details</a>
+                           <h4 class="product__price">Price: $150</h4>
+                           <p class="product__rating">Rating: 4.1/5</p>
+                           <button class="btn product__button">Add To Cart</button>
+                            <!-- Connectivity: Bluetooth
+                            Noise Cancellation: Active Noise Cancellation
+                            USP: Dolby Atmos Supports, 12.4mm Dynamic Bass Booster Driver
+                            Warranty: 12 Months Warranty -->
+                        </p>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>7 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img  class="product__img" src="images/product3.jpg" alt="product3">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Jordan 4 Retro
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__desc">
+                            <p>Style: FQ8213-006</p>
+
+                            <p>Colorway: BLACK/CEMENT GREY/
+                                VARSITY RED/SUMMIT WHITE</p>  
+                            <a href="product.html" class="learn-more">View Details</a>
+                           <h4 class="product__price">Price: $310</h4>
+                           <p class="product__rating">Rating: 3.7/5</p>
+                           <button class="btn product__button">Add To Cart</button>
+                           <!-- Release Date
+                           02/17/2024 -->
+                        </p>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>4 in stock</span>
+                        <hr class="hr-design">
+                        <span>1 sold</span>
+                    </div>
+                    <img  class="product__img" src="images/product4.jpg" alt="product4">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                           Apple Vision Pro
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__desc">
+                            <p>Display Port. - Unmentioned</p>
+                            <p>Processor Model - Apple M2 & Apple R1 Chip</p>
+                            
+                            <a href="product.html" class="learn-more">View Details</a>
+                           <h4 class="product__price">Price: $500</h4>
+                           <p class="product__rating">Rating: 4.1/5</p>
+                           <button class="btn product__button">Add To Cart</button>
+                           <!-- RAM - Unmentioned
+                            Storage - 512GB
+                            Item Category - VR System
+                            Controller Type - Wireless -->
+                        </p>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img  class="product__img" src="images/product5.jpg" alt="product5">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                           Apple Watch Series 9
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__desc">
+                           <p> Brand: Apple</p>
+                            <p>Style: GPS</p>
+                            <p>Colour: Aluminum: Midnight</p>
+                            
+                            
+                            <a href="product.html" class="learn-more">View Details</a>
+                           <h4 class="product__price">Price: $360</h4>
+                           <p class="product__rating">Rating: 3.8/5</p>
+                           <button class="btn product__button">Add To Cart</button>
+                           <!-- Screen Size	45 Millimetres
+                            Special Feature	Sleep Monitor, GPS, Notifications -->
+                        </p>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>20 in stock</span>
+                        <hr class="hr-design">
+                        <span>34 sold</span>
+                    </div>
+                    <img  class="product__img" src="images/product6.jpg" alt="product6">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                           MI Router 4c 
+                        </h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__desc">
+                          
+                            <p>Key Features:</p>
+                            <p>MPN: DVB4231GL</p>
+                            <p>Model: 4C R4CM</p>
+                          
+                            
+                            <a href="product.html" class="learn-more">View Details</a>
+                           <h4 class="product__price">Price: $240</h4>
+                           <p class="product__rating">Rating: 4.7/5</p>
+                           <button class="btn product__button">Add To Cart</button>
+                           <!-- Transmission Rate 300Mbps
+                           Frequency 2.4GHz
+                           Four 5dBi Antennas -->
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <div class="pagination">
+                <button class="btn pagination__btn">
+                    <i class="fa fa-less-than"></i>
+                </button>
+                <button class="btn pagination__btn">
+                    1
+                </button>
+                
+                <button class="btn pagination__btn">
+                    2
+                </button>
+                <button class="btn pagination__btn">
+                    3
+                </button>
+               
+
+                <button class="btn pagination__btn">
+                    4
+                </button>
+                <button class="btn pagination__btn">
+                    5
+                </button>
+                <button class="btn pagination__btn">
+                    6
+                </button>
+                <button class="btn pagination__btn">
+                    7
+                </button>
+                <button class="btn pagination__btn">
+                    8
+                </button>
+                <button class="btn pagination__btn">
+                    9
+                </button>
+                <button class="btn pagination__btn">
+                    10
+                </button>
+                <button class="btn pagination__btn">
+                    ...
+                </button>
+                <button class="btn pagination__btn">
+                    50
+                </button>
+                <button class="btn pagination__btn">
+                    <i class="fa fa-greater-than"></i>
+                </button>
+            </div>
+            <!-- product section ends here -->
+            </div>
+            
+    </main>
+     <!-- main ends here -->
+
+     <!-- footer starts here -->
+     <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe To Stay Updated:</label>
+            
+            <input id="subscribe" name="subscribe" type="email" class="footer__input" placeholder="Enter A Valid Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Conright-2024 Mohammad Sami. All Rights Reserved</p>
+        </div>
+     </footer>
+      <!-- footer ends here -->
+
+      <script src="scripts/index.js"></script>
+</body>
+</html>
